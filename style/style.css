@@ -150,7 +150,7 @@ header{
 .img::after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-image: url(../img/img3.png);
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ header{
 .menu-items__item:nth-child(1):after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-image: url(../img/img4.png);
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@ header{
 .menu-items__item:nth-child(2):after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-image: url(../img/img5.png);
     background-repeat: no-repeat;
@@ -239,7 +239,7 @@ header{
 .menu-items__item:nth-child(3):after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-image: url(../img/img6.png);
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ header{
 .behind-list__item:nth-child(1):after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 10%;
     height: 100%;
     background-image: url(../img/img6.png);
     background-repeat: no-repeat;
@@ -296,7 +296,7 @@ header{
 .behind-list__item:nth-child(2):after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 10%;
     height: 100%;
     background-image: url(../img/img5.png);
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ header{
 .behind-list__item:nth-child(3):after{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 10%;
     height: 100%;
     background-image: url(../img/img4.png);
     background-repeat: no-repeat;
@@ -738,6 +738,7 @@ footer{
     .img {
         width: 100%;
         position: relative;
+        display: none;
     }
     .img::after {
         content: "";
@@ -748,6 +749,9 @@ footer{
         background-repeat: no-repeat;
         left: 62%;
         top: 406px;
+    }
+    .oven-paragraph{
+        width: 100%;
     }
     .menu-items {
         display: flex;
@@ -762,42 +766,43 @@ footer{
     .menu-items__item:nth-child(1):after {
         content: "";
         position: absolute;
-        width: 50%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img4.png);
         background-repeat: no-repeat;
-        left: 260px;
+        left: 65%;
         top: -27px;
     }
     .menu-items__item:nth-child(2):after {
         content: "";
         position: absolute;
-        width: 50%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img5.png);
         background-repeat: no-repeat;
-        left: 260px;
+        left: 65%;
         top: -27px;
     }
     .menu-items__item:nth-child(3):after {
         content: "";
         position: absolute;
-        width: 43%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img6.png);
         background-repeat: no-repeat;
-        left: 260px;
+        left: 65%;
         top: -27px;
     }
     .behind-list__item:nth-child(1):after {
         content: "";
         position: absolute;
-        width: 38%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img6.png);
         background-repeat: no-repeat;
         left: 60%;
         top: -27px;
+        display: none;
     }
     .behind-list__item:nth-child(2):after {
         content: "";
@@ -808,6 +813,7 @@ footer{
         background-repeat: no-repeat;
         left: 27px;
         top: -27px;
+        display: none;
     }
     .behind-list__item:nth-child(3):after {
         content: "";
@@ -818,6 +824,13 @@ footer{
         background-repeat: no-repeat;
         left: 70%;
         top: -27px;
+        display: none;
+    }
+    .behind-list__item__img{
+        display: none;
+    }
+    .behind-list__item__img2{
+        display: none;
     }
     .behind-list__item{
         flex-direction: column;
@@ -836,6 +849,30 @@ footer{
     }
     footer{
         background-image: none;
+    }
+    .footer-container {
+        padding-top: 88px;
+        padding-bottom: 115px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .footer-info__header{
+        padding-left: 0;
+        font-size: 33px;
+        padding-bottom: 60px;
+    }
+    .footer-info__paragraph {
+        padding-left: 0;
+        max-width: 100%;
+        font-size: 23px;
+    }
+    .footer-info__link {
+        max-width: 100%;
+        padding-left: 0;
+        font-size: 23px;
     }
 }
 @media (max-width:290px){
@@ -936,7 +973,7 @@ footer{
     .menu-items__item:nth-child(1):after {
         content: "";
         position: absolute;
-        width: 34%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img4.png);
         background-repeat: no-repeat;
@@ -946,7 +983,7 @@ footer{
     .menu-items__item:nth-child(2):after {
         content: "";
         position: absolute;
-        width: 34%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img5.png);
         background-repeat: no-repeat;
@@ -956,7 +993,7 @@ footer{
     .menu-items__item:nth-child(3):after {
         content: "";
         position: absolute;
-        width: 34%;
+        width: 31%;
         height: 100%;
         background-image: url(../img/img6.png);
         background-repeat: no-repeat;
@@ -1057,4 +1094,21 @@ footer{
         padding-left: 0;
         font-size: 23px;
     }
+}
+
+
+
+
+/* /////////////////////////////////Privacy////////////////////////////////////*/
+
+.private{
+    font-family: 'CynthoSlabPro';
+    font-size: 20px;
+    color: var(--color-textprem);
+}
+/* /////////////////////////////////Teams////////////////////////////////////*/
+.teams{
+    font-family: 'CynthoSlabPro';
+    font-size: 20px;
+    color: var(--color-textprem);
 }
